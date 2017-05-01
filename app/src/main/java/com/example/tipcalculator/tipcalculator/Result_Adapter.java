@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by derp on 4/24/17.
+ * Created by Esther Song on 4/24/17.
  */
 
 public class Result_Adapter extends BaseAdapter {
@@ -41,7 +41,7 @@ public class Result_Adapter extends BaseAdapter {
         TextView cost_w_tip = (TextView) row.findViewById(R.id.cost_w_tip_txt_v);
 
         name.setText(people_list.get(position).get_name());
-        cost_w_tip.setText(Double.toString(people_list.get(position).get_cost_with_tip()));
+        cost_w_tip.setText(String.format("%.2f", people_list.get(position).get_cost_with_tip()));
 
         return row;
     }

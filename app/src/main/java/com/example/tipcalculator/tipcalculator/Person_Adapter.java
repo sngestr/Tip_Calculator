@@ -57,6 +57,7 @@ class Person_Adapter extends BaseAdapter {
                 //update the total cost in the activity
                 if(mContext instanceof SplitByCostActivity){
                     ((SplitByCostActivity)mContext).update_total();
+                    ((SplitByCostActivity)mContext).update_total_w_tip();
                 }
             }
         });

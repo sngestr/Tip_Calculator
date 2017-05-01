@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 /**
- * Created by derp on 4/23/17.
+ * Created by Esther Song on 4/23/17.
  */
 
 public class Person {
