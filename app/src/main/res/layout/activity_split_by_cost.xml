@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/tip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tip_amount_txt_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tip_amount_txt"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/tip_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:entries="@array/tip_amount_arr" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_people_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/person_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="@string/person_name_hint"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:id="@+id/cost_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:text="@string/currency_txt"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/person_cost_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:hint="@string/add_person_hint"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_person_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/person_cost_txt" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/people_list"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_display_txt_v"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:text="@string/total_amount_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_txt_v"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="@string/currency_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currency_txt_v"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="0.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_cost_txt_v"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/result_list_v"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total_with_tip_txt_v"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_w_tip_txt"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="split_by_cost_btn_txt">Split By Cost</string>
+    <string name="split_even_btn_txt">Split Even</string>
+    <string name="total_amount_txt">Total Cost: </string>
+    <string name="currency_txt">$</string>
+    <string name="tip_amount_txt">Tip Amount</string>
+
+    <string-array name="tip_amount_arr">
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+        <item>30%</item>
+        <item>35%</item>
+    </string-array>
+
+    <string name="calculate_btn_txt">Calculate</string>
+    <string name="number_of_people_txt">Total People:</string>
+    <string name="result_top_txt">Each person pays:</string>
+    <string name="result_txt">$0.00</string>
+    <string name="person_cost_txt">Add</string>
+    <string name="add_person_hint">Enter each cost</string>
+    <string name="person_name_hint">Enter Name</string>
+    <string name="delete_btn_txt">Delete</string>
+    <string name="total_w_tip_txt">Total with tip: </string>
+</resources>
