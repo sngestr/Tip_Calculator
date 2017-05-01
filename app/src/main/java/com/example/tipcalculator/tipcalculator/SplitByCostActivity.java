@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListAdapter;
@@ -19,7 +20,7 @@ import java.util.ArrayList;
  * Created by Esther Song on 3/28/17.
  */
 
-public class SplitByCostActivity extends AppCompatActivity{
+public class SplitByCostActivity extends AppCompatActivity {
     //private EditText total_amount;
     private Spinner tip_percentage;
     private EditText each_amount;
@@ -43,6 +44,7 @@ public class SplitByCostActivity extends AppCompatActivity{
         total_cost = (TextView) findViewById(R.id.total_cost_txt_v);
         final Button add_btn = (Button) findViewById(R.id.add_person_btn);
         result_w_tip_v = (TextView) findViewById(R.id.total_with_tip_txt_v);
+        final TextView total_with_tip_txt_v = (TextView) findViewById(R.id.total_with_tip_txt_v);
 
         cost_list = (ListView) findViewById(R.id.people_list);
         result_list = (ListView) findViewById(R.id.result_list_v);
@@ -58,29 +60,56 @@ public class SplitByCostActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 add_btn.setEnabled(false);
+
                 //Add the information given by the user to the array list
                 double cost;
-                String cost_txt = String.format("%.2f", Double.parseDouble(each_amount.getText().toString()));     //get cost
-                cost = Double.parseDouble(cost_txt);
+                String cost_txt = each_amount.getText().toString();     //get cost
                 String name = person_name.getText().toString();         //get name
 
-                add_person(name, cost);
-                calculate_each_person_cost();       //calculate the amount with tip
+                if(!cost_txt.isEmpty() && !name.isEmpty()){
+                    cost_txt = String.format("%.2f", Double.parseDouble(cost_txt));
+                    cost = Double.parseDouble(cost_txt);
 
-                //display total cost with the added person
-                total_cost.setText(String.format("%.2f", get_total()));
+                    add_person(name, cost);
+                    calculate_each_person_cost(get_tip_percentage());       //calculate the amount with tip
 
-                result_w_tip_v.setText(Double.toString(get_total_with_tip()));
+                    //display total cost with the added person
+                    total_cost.setText(String.format("%.2f", get_total()));
 
+                    result_w_tip_v.setText(Double.toString(get_total_with_tip()));
+                }
                 add_btn.setEnabled(true);
+            }
+        });
+
+        tip_percentage.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Object item = adapterView.getItemAtPosition(i);
+
+                String percentage = item.toString();    //get the spinner label
+                percentage = percentage.substring(0, percentage.length() - 1);    //remove % from string
+                double tip = Double.parseDouble(percentage);
+                calculate_each_person_cost(tip);
+                update_total_w_tip();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
             }
         });
     }
 
     //update the total cost
-    public void update_total(){
+    public void update_total() {
         total_cost.setText(String.format("%.2f", get_total()));         //set the new total cost
         result_list.setAdapter(new Result_Adapter(this, people_list));  //update result list
+    }
+
+    //update the total cost with tip
+    public void update_total_w_tip(){
+        result_w_tip_v.setText(String.format("%.2f", get_total_with_tip()));
     }
 
     //add a person obj to the list and display to list
@@ -94,14 +123,14 @@ public class SplitByCostActivity extends AppCompatActivity{
     }
 
     //calculate everyone's cost with the tip percentage
-    private void calculate_each_person_cost(){
-        String percentage = tip_percentage.getSelectedItem().toString();
+    private void calculate_each_person_cost(Double tip) {
+        /*String percentage = tip_percentage.getSelectedItem().toString();
         //remove the % from the percentage
         percentage = percentage.substring(0, percentage.length() - 1);
-        double tip = Double.parseDouble(percentage); //get the tip percentage
+        double tip = Double.parseDouble(percentage); //get the tip percentage*/
 
         //calls the method that will calculate all the cost with tip for each person
-        for(int i = 0; i < people_list.size(); i++){
+        for (int i = 0; i < people_list.size(); i++) {
             people_list.get(i).set_cost_with_tip(tip);
         }
 
@@ -110,20 +139,28 @@ public class SplitByCostActivity extends AppCompatActivity{
     }
 
     //return the total cost with tip included
-    private double get_total_with_tip(){
+    private double get_total_with_tip() {
         double total = 0;
-        for(int i = 0; i < people_list.size(); i++){
+        for (int i = 0; i < people_list.size(); i++) {
             total += people_list.get(i).get_cost_with_tip();
         }
         return total;
     }
 
     //return the total cost without tip
-    private double get_total(){
+    private double get_total() {
         double total = 0;
-        for (int i = 0; i < people_list.size(); i++){
+        for (int i = 0; i < people_list.size(); i++) {
             total += people_list.get(i).get_cost();
         }
         return total;
+    }
+
+    //return tip from spinner
+    private Double get_tip_percentage() {
+        String tip = tip_percentage.getSelectedItem().toString();
+        tip = tip.substring(0, tip.length() - 1);
+
+        return Double.parseDouble(tip);
     }
 }

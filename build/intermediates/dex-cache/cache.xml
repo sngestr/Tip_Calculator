@@ -3,21 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_5fa47f18241bb4fce8d1a6b8497dda5c01de701d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jar="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_1dcaa361b4b4103175585d0063eff113fecef611.jar" />
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_5dd3a966a9d0610b4168faff00fc84000163d8e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_ed5e5a1da4723aa3e7ba6bf3c91b3506c91a216a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -36,6 +36,78 @@
         revision="25.0.1"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.0_e6fb85b22ecad4ff3d08dd8e5c850ae5f13dae87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_41b22550dd0d8f88532423906fdf85146d10b209.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.0_eaa3b2d5de8955b9e50aa3607a57b77f7ebe04d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_2aba4321162ba8f82526ce5fd548b29a09b30a23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_1131710c2cac7dea35cc72a89b41e417c13005ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_56663cd2b34142989a8fa1232232c71c02ed3866.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_3cd401d6b3a2b7cffa0cf56310e59aea41a043df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_5fa47f18241bb4fce8d1a6b8497dda5c01de701d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_1dcaa361b4b4103175585d0063eff113fecef611.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,6 +138,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_72c94d8e98f3577837fefd7c8a0a97d18c319d4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/duckbutt/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
         jumboMode="false"
         optimize="true"
@@ -84,12 +165,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jar="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="/Users/duckbutt/Desktop/Android Development/Term Project/TipCalculator/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_1131710c2cac7dea35cc72a89b41e417c13005ad.jar" />
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/duckbutt/Desktop/Android Development/Tip_Calculator/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_8799edf75839ba5c19eb6dbb959d8f0950afb0c2.jar" />
     </item>
 
 </items>

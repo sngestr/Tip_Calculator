@@ -110,27 +110,27 @@
         android:layout_marginTop="10dp">
 
         <TextView
-            android:text="@string/total_amount_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/total_txt_v"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="@string/total_amount_txt"
             android:textSize="18sp" />
 
         <TextView
-            android:text="@string/currency_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/currency_txt_v"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="@string/currency_txt"
             android:textSize="18sp" />
 
         <TextView
-            android:text="0.00"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/total_cost_txt_v"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="0.00"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -144,13 +144,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:orientation="vertical">
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_w_tip_txt"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/currency_txt"
+            android:textSize="18sp"
+            android:layout_marginRight="3dp"/>
 
         <TextView
             android:id="@+id/total_with_tip_txt_v"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/total_w_tip_txt"
+            android:text="0.00"
             android:textSize="18sp" />
 
     </LinearLayout>
